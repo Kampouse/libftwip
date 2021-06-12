@@ -6,7 +6,7 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/11 09:42:25 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/06/12 09:40:45 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/06/12 13:36:32 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,5 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	link->content = content;
 	link->next = NULL;
-
 	return (link);
 }
-
