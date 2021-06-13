@@ -6,7 +6,7 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/09 17:20:26 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/05/23 17:51:52 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/06/13 15:12:52 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *str, int compared)
 	value = 0;
 	while (str[value])
 	{
-		if (str[value] == (char)compared)
+		if (str[value] == (unsigned char)compared)
 		{
 			return ((char *)&str[value]);
 		}
