@@ -6,7 +6,7 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 22:19:11 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/06/08 10:45:11 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/06/12 20:54:26 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,20 @@
 #include "stdlib.h"  
 void	*ft_memchr(const void *src, int value, size_t num)
 {
-	unsigned char	*heler_return;
-	unsigned char	*interator;
+	unsigned char	*str;
+	size_t			inc;
 
-	interator = (unsigned char *)src;
-	heler_return = NULL;
-	while ((interator != NULL) && (num--))
+	inc = 0;
+	str = (unsigned char *)src;
+	while (inc < num)
 	{
-		if (*interator != (unsigned char)value)
-			interator++;
-		else
+		if (*str != (unsigned char)value)
 		{
-			heler_return = interator;
+			str++;
+			inc++;
 		}
+		else
+			return (str);
 	}
-	return (heler_return);
+	return (NULL);
 }

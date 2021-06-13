@@ -6,7 +6,7 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/05 21:28:42 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/06/12 09:46:27 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/06/12 20:31:20 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*heler_dest;
 
 	i = 0;
-	if (!dest)
+	if (!dest && !src)
 		return (NULL);
 	 heler_src = (unsigned char *)src;
 	 heler_dest = (unsigned char *)dest;
-	while (i != n)
+	while (i < n)
 	{
 		heler_dest[i] = heler_src[i];
 		i++;
