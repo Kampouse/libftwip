@@ -31,7 +31,7 @@ int			ft_toupper(int str);
 int			ft_tolower(int str);
 void		*ft_calloc(size_t lenght, size_t size);
 char		*ft_strdup(const char *str);
-char		*ft_substr(char const *src, size_t start,	size_t end);
+char		*ft_substr(char const *src, unsigned int start,	size_t end);
 char		*ft_strjoin(const char *first, const char *second);
 char		*ft_strtrim(char const *str, char const *set);
 char		**ft_split( const char *str, char comp);
